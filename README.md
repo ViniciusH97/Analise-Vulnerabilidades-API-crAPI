@@ -9,6 +9,7 @@ Demonstrar, de forma prática, como vulnerabilidades como **Broken Object Level 
 ## Ambiente de Testes
 
 - **Sistema Host:** Ubuntu Server em máquina virtual
+- **Sistema Atacante:** Kali Linux em máquina virtual
 - **Ferramentas:** Docker, Kali Linux, Burp Suite, Postman, OWASP ZAP
 - **Aplicação Alvo:** crAPI (vulnerável por design)
 - **Rede:** Isolada e controlada para fins educacionais
