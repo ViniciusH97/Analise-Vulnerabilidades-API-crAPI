@@ -22,7 +22,7 @@ Demonstrar, de forma prática, como vulnerabilidades como **Broken Object Level 
 
 - **Rede:** O testes serão realizados em ambiente controlado, com duas máquinas virtuais onde ambas estarão em uma rede interna, Isolada e controlada para fins educacionais.
 
-### Comunicação entre as máquinas virtuais após defini-las ambas na mesma subrede
+### Comunicação entre as máquinas virtuais após configurar ambas na mesma subrede (Rede interna)
 
 - ![image](https://github.com/user-attachments/assets/ed68f0a9-8e89-4a8a-aef6-0d63940b435e)
 > ping do Ubuntu Server para o Kali linux.
