@@ -13,8 +13,6 @@ Demonstrar, de forma prática, como vulnerabilidades como **Broken Object Level 
 
 - ![image](https://github.com/user-attachments/assets/f15b8548-66d0-4602-89f4-cd0348af392d)
   
-- **Ferramentas:** Docker, Kali Linux, Burp Suite, Postman, OWASP ZAP
-
 - **Aplicação Alvo crAPI:** Em containers no Docker (vulnerável por design)
 
 - ![image](https://github.com/user-attachments/assets/2898daad-3f63-4ac1-9d25-a5d5ea3a89df)
