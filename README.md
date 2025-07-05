@@ -61,6 +61,7 @@ Demonstrar, de forma prática, como vulnerabilidades como **Broken Object Level 
 
 - [OWASP Top 10 - API Security](https://owasp.org/www-project-api-security/)
 - [crAPI - Completely Ridiculous API](https://github.com/OWASP/crAPI)
+- [Meu Fork do Projeto do crAPI ajustado para o trabalho](https://github.com/ViniciusH97/crAPI.git)
 - [Pentest em aplicações Web](https://novatec.com.br/livros/pentest-em-aplicacoes-web/)
 
 ---
