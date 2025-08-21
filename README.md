@@ -33,7 +33,7 @@ Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level A
 ## Tecnologias Utilizadas
 
 - Docker e Docker Compose
-- Ferramentas de Pentest: Burp Suite, ZAP, Nmap, Wireshark
+- Ferramentas de Pentest: Burp Suite, ZAP, Nmap, ffuf, Hydra e Postman.
 - Scripts em **Python** e **Bash** para automação de testes
 - PostgreSQL/MySQL (no backend da crAPI)
 
