@@ -4,7 +4,7 @@ Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) c
 
 ## Objetivo
 
-Demonstrar, de forma prática, como vulnerabilidades como **Broken Object Level Authorization (BOLA)** e **Broken Authentication** podem ser exploradas por atacantes, e apresentar **boas práticas de mitigação** baseadas no OWASP Top 10.
+Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level Authorization (BOLA)** e **Broken Authentication** entre outras, podem ser exploradas por atacantes, e apresentar **boas práticas de mitigação** baseadas no OWASP Top 10.
 
 ## Ambiente de Testes
 
