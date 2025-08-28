@@ -18,7 +18,7 @@ Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level A
 - ![image](https://github.com/user-attachments/assets/2898daad-3f63-4ac1-9d25-a5d5ea3a89df)
 > Subindo a aplicação no Docker.
 
-- **Rede:** O testes serão realizados em ambiente controlado, com duas máquinas virtuais onde ambas estarão em uma rede interna, Isolada e controlada.
+- **Rede:** Os testes foram realizados em ambiente controlado, com duas máquinas virtuais onde ambas estavam em uma rede interna, Isolada e controlada.
 
 ### Comunicação entre as máquinas virtuais após configurar ambas na mesma subrede (Rede interna)
 
