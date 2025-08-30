@@ -1,3 +1,5 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/ViniciusH97/Analise-Vulnerabilidades-API-crAPI)
+
 # TCC - Análise de Vulnerabilidades em APIs RESTful (crAPI)
 
 Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) com foco na **identificação e exploração de vulnerabilidades críticas em APIs RESTful**, utilizando a aplicação vulnerável **crAPI** desenvolvida pela OWASP.
