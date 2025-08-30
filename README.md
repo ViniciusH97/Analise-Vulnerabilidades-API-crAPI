@@ -35,3 +35,8 @@ A metodologia se seguirá pelos preceitos do (Penetration Testing Execution Stan
 ## Aviso 
 
 Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado para demonstração controlada em ambiente de testes. Nenhuma técnica aqui documentada deve ser usada em ambientes reais sem autorização explícita.
+
+## Licenças
+
+- [MIT License](LICENSE)    
+- **Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 (veja [docs/NOTICE.md](docs/OWASP-API-Top10.md))
