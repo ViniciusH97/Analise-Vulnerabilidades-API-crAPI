@@ -39,4 +39,4 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado par
 ## Licenças
 
 - [MIT License](LICENSE)    
-- **Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 ([docs/OWASP-API-Top10.md.md](docs/OWASP-API-Top10.md))
+- **Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 ([docs/OWASP-API-Top10.md](docs/OWASP-API-Top10.md))
