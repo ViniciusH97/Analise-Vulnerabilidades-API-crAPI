@@ -6,54 +6,18 @@ Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) c
 
 Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level Authorization (BOLA)** e **Broken Authentication** entre outras, podem ser exploradas por atacantes, e apresentar **boas práticas de mitigação** baseadas no OWASP Top 10.
 
-## Ambiente de Testes
-
-- **Sistema Host:** Ubuntu Server em máquina virtual
-- **Sistema Atacante:** Kali Linux em máquina virtual
-
-- ![image](https://github.com/user-attachments/assets/f15b8548-66d0-4602-89f4-cd0348af392d)
-  
-- **Aplicação Alvo crAPI:** Em containers no Docker (vulnerável por design)
-
-- ![image](https://github.com/user-attachments/assets/2898daad-3f63-4ac1-9d25-a5d5ea3a89df)
-> Subindo a aplicação no Docker.
-
-- **Rede:** Os testes foram realizados em ambiente controlado, com duas máquinas virtuais onde ambas estavam em uma rede interna, Isolada e controlada.
-
-### Comunicação entre as máquinas virtuais após configurar ambas na mesma subrede (Rede interna)
-
-- ![image](https://github.com/user-attachments/assets/ed68f0a9-8e89-4a8a-aef6-0d63940b435e)
-> ping do Ubuntu Server para o Kali linux.
-
-- ![image](https://github.com/user-attachments/assets/72dbb6a0-d4fa-4c21-a179-10bdd98391cb)
-> ping do Kali Linux para o Ubuntu Server.
-
 ---
+
+## Metodologia Utilizadas
+
+A metodologia se seguirá pelos preceitos do (Penetration Testing Execution Standard), que auxiliará em uma análise mais ténica e eficiente dos testes. O metódo de teste seguirá com espeçoes manuais e automatizadas com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI. Além disso, a categorização e a compreensão dos riscos serão aprimoradas pela consulta ao MITRE ATT&CK, tornando a visão das táticas e técnicas de um invasor real com foco nas vulnerabilidades críticas das APIs.
 
 ## Tecnologias Utilizadas
 
 - Docker e Docker Compose
-- Ferramentas de Pentest: Burp Suite, ZAP, Nmap, ffuf, Hydra e Postman.
+- Ferramentas de Pentest: Burp Suite, ZAP, Nmap, ffuf, Hydra, Postman entre outros.
 - Scripts em **Python** e **Bash** para automação de testes
 - PostgreSQL/MySQL (no backend da crAPI)
-
----
-
-## Estrutura do Projeto
-
-| Pasta         | Descrição |
-|---------------|-----------|
-| `docs/`       | Relatório técnico e referências do projeto |
-| `lab/`        | Arquivos e instruções para replicar o ambiente com Docker |
-| `ataques/`    | Relatos de exploração de vulnerabilidades com ferramentas |
-| `scripts/`    | Scripts para varredura e enumeração |
-| `evidencias/` | Prints e logs das execuções dos testes |
-
----
-
-## Mitigações Propostas
-
-[Em processo]
 
 ---
 
