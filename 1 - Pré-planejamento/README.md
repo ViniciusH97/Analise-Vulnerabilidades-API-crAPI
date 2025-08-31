@@ -4,6 +4,8 @@
 
 Antes de iniciarmos, é importante repondermos algumas perguntas para realizar o teste de invasão em uma aplicação web. Seguindo os preceitos do Penetration Testing Execution Standard (PTES).
 
+---
+
 **Perguntas**
 
 Quantos aplicativos da web estão sendo avaliados?
@@ -38,6 +40,8 @@ R: Sim, será realizado teste baseado em função, explorando os fluxos principa
 
 O cliente deseja que sejam executadas verificações credenciadas de aplicativos Web?
 R: Sim, serão realizados testes autenticados para verificar permissões, controles de acesso e exposição de dados após login.
+
+---
 
 ### Ambiente de Testes
 
