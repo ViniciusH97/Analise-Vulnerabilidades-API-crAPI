@@ -48,7 +48,14 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 - **Sistema Host:** Ubuntu Server em máquina virtual
 - **Sistema Atacante:** Kali Linux em máquina virtual
 
-- ![image](https://github.com/user-attachments/assets/f15b8548-66d0-4602-89f4-cd0348af392d)
+#### Configuração do ambiente de teste:
+
+- Instalação do Ubuntu Server parte 1: https://youtu.be/EXaSY-5y3yI?si=aASKbSbslIPukknB
+- Instalação do Ubuntu Server parte 2: https://youtu.be/nb0mQ3gPHeQ?si=RAPE3cow92k8rOch
+
+---
+
+![image](https://github.com/user-attachments/assets/f15b8548-66d0-4602-89f4-cd0348af392d)
   
 - **Aplicação Alvo crAPI:** Em containers no Docker (vulnerável por design)
 
@@ -64,3 +71,5 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 
 - ![image](https://github.com/user-attachments/assets/72dbb6a0-d4fa-4c21-a179-10bdd98391cb)
 > ping do Kali Linux para o Ubuntu Server.
+
+
