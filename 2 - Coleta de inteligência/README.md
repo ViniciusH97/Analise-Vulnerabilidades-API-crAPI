@@ -10,7 +10,7 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 - Ambiente: **localhost** (crAPI rodando localmente via Docker), no meu caso, utilizei o ip da máquina virtual com Ubuntu Server.
 - Métodos: **reconhecimento ativo** da aplicação
-- Ferramentas utilizadas: `curl`, `Postman`, `DevTools`, entre outros.
+- Ferramentas utilizadas: `curl`, `wget`, `DevTools`,`nikto`, entre outros.
 - Não envolve endpoints públicos ou coleta externa
 
 ## 3. Atividades realizadas
@@ -52,6 +52,8 @@ _Request_ em estrutura JSON:
 _Request_ com usuário e senha cadastrados:
 
 <img width="1026" height="521" alt="image" src="https://github.com/user-attachments/assets/3682cb94-a971-4526-ae37-8ccec398bf0e" />
+
+---
 
 _Response_ do endpoint de login:
 
