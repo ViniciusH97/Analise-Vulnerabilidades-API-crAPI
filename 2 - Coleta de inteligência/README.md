@@ -61,15 +61,23 @@ Ao realizar o login, a aplicação retorna um token JWT sem assinatura digital
 
 ---
 
-Identificação de endpoints com o método GET:
-
-1. `/identity/api/v2/user/dashboard`:
+Identificação de endpoints com o método GET `/dashboard`:
 
 <img width="969" height="533" alt="image" src="https://github.com/user-attachments/assets/5dc1017f-5f33-405d-b81d-a4d28267478f" />
 
-Ao realizar o login, a aplicação retorna um token JWT sem assinatura digital
+---
+
+Identificação do endpoint método GET `/vehicles`:
+
+<img width="950" height="443" alt="image" src="https://github.com/user-attachments/assets/62493fe1-ea35-4cae-b4ce-73e2f0c8176d" />
 
 ---
+
+### Endpoints encontrados:
+
+1. `/identify/api/auth/login/`
+2. `/identity/api/v2/user/dashboard`
+3. `/identity/api/v2/vehicle/vehicles`
 
 ## **Análise de respostas HTTP e headers**
    - Investigação de headers de segurança (`Content-Security-Policy`, `X-Frame-Options`, etc.)
@@ -85,6 +93,30 @@ curl -I http:/192.168.0.110:8888
 
 <img width="708" height="417" alt="image" src="https://github.com/user-attachments/assets/3d52c29f-6610-4f40-a449-ba2ec6b5a273" />
 
+---
+
+**Ferramenta utilizada:** `wget`
+
+<img width="683" height="491" alt="image" src="https://github.com/user-attachments/assets/ce692ea9-69aa-4ba0-8453-10d3507f1f19" />
+
+--- 
+
+**Ferramenta utilizada:** `nikto`
+
+<img width="793" height="529" alt="image" src="https://github.com/user-attachments/assets/bbadd93d-76c7-461e-98f7-b3ab818b02ef" />
+
+[Descrição da análise com nikto]
+
+### 2. Análise dos Headers
+
+- `Server: openresty/1.25.3.1` → expõe tecnologia e versão do servidor (**fingerprinting**).
+- Ausência de `Content-Security-Policy` → aplicação vulnerável a **XSS**.
+- Ausência de `X-Frame-Options` → risco de **clickjacking**.
+- Ausência de `Strict-Transport-Security (HSTS)` → risco de downgrade de HTTPS → HTTP.
+- Ausência de `X-Content-Type-Options` → pode permitir **MIME sniffing**.
+- Presença de `Cache-Control: no-store, no-cache, must-revalidate` → **ponto positivo**, evita cache de conteúdo sensível.
+
+---
 
 Todas as descobertas foram registradas para servir de base para análise de vulnerabilidades e a organização dos dados por recurso e tipo de informação
 
