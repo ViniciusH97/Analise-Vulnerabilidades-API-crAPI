@@ -38,6 +38,8 @@ Neste teste foi utilizado um e-mail e senha não cadastrado para mapear o endpoi
 
 <img width="833" height="374" alt="image" src="https://github.com/user-attachments/assets/19c58a0f-664a-410f-b2e9-8b968d4fc4d7" />
 
+**Acrescentar**(Testar os casos de e-mail valido com senha inválida)
+
 _Request_ em estrutura JSON:
 
 ```json
@@ -107,7 +109,7 @@ curl -I http:/192.168.0.110:8888
 
 <img width="793" height="529" alt="image" src="https://github.com/user-attachments/assets/bbadd93d-76c7-461e-98f7-b3ab818b02ef" />
 
-[Descrição da análise com nikto]
+**Acrescentar** [Descrição da análise com nikto]
 
 ### 2. Análise dos Headers
 
