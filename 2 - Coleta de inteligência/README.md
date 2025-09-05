@@ -132,4 +132,4 @@ Mesmo em ambiente local, este trabalho pode ser mapeado conceitualmente para té
 - **T1087 – Account Discovery:** levantamento de informações de usuários e dados visíveis via API
 - **T1609 – Container and Resource Discovery:** análise do ambiente local e recursos da aplicação
 
-> O mapeamento MITRE é conceitual, para ilustrar como atividades de reconhecimento interno se relacionam com técnicas utilizadas em ataques reais.
+> O mapeamento MITRE é conceitual, para ilustrar como as atividades de reconhecimento interno podem se relacionar com técnicas utilizadas em ataques reais.
