@@ -39,5 +39,6 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado par
 
 ## Licenças
 
-- [MIT License](LICENSE)    
-- **Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 ([docs/OWASP-API-Top10.md](docs/OWASP-API-Top10.md))
+<a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">Analise-Vulnerabilidades-API-crAPI</a> © 2025 by <a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">ViniciusH97</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+**Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 ([docs/OWASP-API-Top10.md](docs/OWASP-API-Top10.md))
