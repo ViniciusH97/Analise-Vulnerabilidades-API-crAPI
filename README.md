@@ -39,6 +39,12 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado par
 
 ## Licenças
 
-<a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">Analise-Vulnerabilidades-API-crAPI</a> © 2025 by <a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">ViniciusH97</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">Analise-Vulnerabilidades-API-crAPI</a> © 2025 by <a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">ViniciusH97</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0
+
+[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
 
 **Trechos do OWASP API Security Top 10**: © OWASP Foundation, CC BY-SA 4.0 ([docs/OWASP-API-Top10.md](docs/OWASP-API-Top10.md))
