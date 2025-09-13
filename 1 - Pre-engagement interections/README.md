@@ -84,4 +84,4 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 ![image](https://github.com/user-attachments/assets/72dbb6a0-d4fa-4c21-a179-10bdd98391cb)
 > ping do Kali Linux para o Ubuntu Server.
 
-Como foi um sucesso a comunicação entre as duas máquinas virtuais, configuradas na mesma rede podemos seguir para a segunda seção chamada de [Intelligence Gathering]()
+Como a comunicação entre as máquinas virtuais configuradas na mesma rede foi um sucesso, podemos seguir para a segunda seção da norma PTES chamada de [Intelligence Gathering](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/2%20-%20Intelligence%20Gathering)
