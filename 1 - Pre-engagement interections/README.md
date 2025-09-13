@@ -14,10 +14,10 @@ R: Somente um chamado de crAPI
 Quantos sistemas de login estão sendo avaliados?
 R: Será avaliado apenas um: tela de Logon do crAPI.
 
-Quantas páginas estáticas estão sendo avaliadas? (aproximado)
+Quantas páginas estáticas estão sendo avaliadas? 
 R: Aproximadamente 8 páginas.
 
-Quantas páginas dinâmicas estão sendo avaliadas? (aproximado)
+Quantas páginas dinâmicas estão sendo avaliadas? 
 R: Aproximadamente 15 páginas.
 
 O código-fonte será disponibilizado prontamente?
@@ -54,6 +54,7 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 - [Video autoral - Instalação do Ubuntu Server parte 2](https://youtu.be/nb0mQ3gPHeQ?si=RAPE3cow92k8rOch)
 
 - [Video autoral - Instalação do Kali Linux](https://youtu.be/aUyct83SRX0?si=rcahdz4w6uTPCFk1)
+
 ---
 
 ![image](https://github.com/user-attachments/assets/f15b8548-66d0-4602-89f4-cd0348af392d)
