@@ -13,14 +13,28 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 - Ferramentas utilizadas: `curl`, `wget`, `DevTools`,`nikto`, entre outros.
 - Não envolve endpoints públicos ou coleta externa
 
+---
+
 ## 3. Atividades realizadas
+
+### 3.1 Realizar o mapeamento de rede do servidor da API
+   - Identificar portas
+   - Identificar serviçoes expostos
+
+**Ferramenta utilizada:** `nmap`
+
+<img/>
+
+Após o mapeamento com o uso do `nmap`, foi possível identificar as portas abertas 22 (SSH), 8080, 8087, 8443 e 8888 (interface web principal). O reconhecimento da rede foi concluído e a superfície de ataque inicial foi mapeada com sucesso.
+
+---
 
 **Mapeamento de rotas e endpoints da API**
    - Identificação de todos os recursos disponíveis no servidor local
    - Análise de métodos HTTP suportados (GET, POST, PUT, DELETE, etc.)
    - Documentação de parâmetros de entrada e formatos de resposta.
 
-## Tela de Login - Aplicação crAPI:
+### 3.2 Tela de Login - Aplicação crAPI:
 
 **Ferramenta utilizada:** `DevTools`
 
@@ -77,13 +91,15 @@ Identificação do endpoint método GET `/vehicles`:
 
 ---
 
-### Endpoints encontrados:
+### 3.2.1 Endpoints encontrados:
 
 1. `/identify/api/auth/login/`
 2. `/identity/api/v2/user/dashboard`
 3. `/identity/api/v2/vehicle/vehicles`
 
-## **Análise de respostas HTTP e headers**
+---
+
+### 3.3. Análise de respostas HTTP e headers
    - Investigação de headers de segurança (`Content-Security-Policy`, `X-Frame-Options`, etc.)
    - Identificação de informações potencialmente sensíveis em respostas
 
