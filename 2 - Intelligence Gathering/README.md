@@ -17,7 +17,147 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 ## 3. Atividades realizadas
 
-### 3.1 Realizar o mapeamento de rede do servidor da API
+### 3.1 Analise na documentação da crAPI para entender a lógica de negócio e endpoints esperados
+
+#### 3.1.1 A lógica da aplicação:
+
+Após analisar o arquivo `crapi-openapi-spec.json`, foi possível identificar que a aplicação crAPI simula uma plataforma para gerenciamento de veículos. A lógica de negócio é dividida em módulos principais: 
+
+- Identidade (autenticação e gerenciamento de usuários);
+- Veículos;
+- Comunidade (fórum e cupons); e
+- Workshop (loja e mecânicos)
+
+A seguir, o detalhamento das principais funcionalidades e seus respectivos endpoints.
+
+---
+
+### 1. Módulo de Identidade e Autenticação
+Este módulo gerencia todo o ciclo de vida do usuário, desde o cadastro até a recuperação de senha.
+
+Criação de Conta de Usuário
+O usuário cria a conta no crAPI utilizando o endpoint `/identity/api/auth/signup`
+
+**Objetos enviados:**
+
+- email (tipo: string) 
+- name (tipo: string) 
+- number (tipo: string) 
+- password (tipo: string) 
+
+**Método:** POST 
+
+Respostas possíveis:
+
+- 200: "User successfully registered" 
+- 403: Descrição não disponível 
+- 500: Descrição não disponível 
+
+--- 
+**Login de Usuário**
+
+Para se autenticar, o usuário utiliza o endpoint `/identity/api/auth/login`
+
+**Objetos enviados:**
+- email (tipo: string) 
+- password (tipo: string) 
+
+**Método:** POST 
+
+Respostas possíveis:
+
+- 200: Retorna um token JWT para ser usado em requisições autenticadas.
+- 500: Descrição não disponível 
+---
+### 2. Módulo de Veículos
+Após o login, o usuário pode gerenciar seus veículos.
+
+**Adicionar um Novo Veículo**
+O usuário adiciona um veículo à sua conta pelo endpoint `/identity/api/v2/vehicle/add_vehicle`
+
+Objetos enviados:
+- pincode (tipo: string) 
+- vin (tipo: string) 
+
+**Método:** POST 
+
+Segurança: Requer autenticação via bearerAuth (token JWT).
+
+**Respostas possíveis:**
+- 200: Veículo adicionado com sucesso.
+- 403: Acesso proibido/não autorizado.
+---
+**Obter Localização do Veículo**
+É possível consultar a localização de um veículo específico via endpoint `/identity/api/v2/vehicle/{vehicleId}/location`
+
+Parâmetro na URL:
+- vehicleId (tipo: string, formato: uuid) 
+
+**Método:** GET 
+
+**Segurança:** Requer autenticação via bearerAuth (token JWT).
+
+**Respostas possíveis:**
+- 200: Retorna os dados de localização.
+- 404: "Invalid vehicle_id for User" 
+---
+### 3. Módulo de Comunidade (Fórum)
+A aplicação possui um fórum onde usuários autenticados podem interagir.
+
+**Criar uma Nova Postagem**
+Usuários criam posts no fórum através do endpoint `/community/api/v2/community/posts`
+
+**Objetos enviados:**
+- content (tipo: string) 
+- title (tipo: string) 
+
+**Método:** POST 
+
+**Segurança:** Requer autenticação via bearerAuth (token JWT).
+
+**Respostas possíveis:**
+- 200: Retorna o post recém-criado com detalhes do autor.
+---
+### 4. Módulo de Workshop (Loja)
+Usuários podem comprar produtos e gerenciar pedidos.
+
+**Criar um Pedido**
+Para comprar um produto, a aplicação utiliza o endpoint `/workshop/api/shop/orders`
+
+**Objetos enviados:**
+- product_id (tipo: integer) 
+- quantity (tipo: integer) 
+
+**Método:** POST 
+
+**Segurança:** Requer autenticação via bearerAuth (token JWT).
+
+**Respostas possíveis:**
+- 200: "Order sent successfully." 
+- 400: "Insufficient Balance. Please apply coupons to get more balance!" 
+---
+### 5. Módulo Administrativo **(Ponto de Atenção)**
+Existem endpoints que deveriam ser restritos a administradores.
+
+**Deletar Vídeo de Perfil (Admin)**
+Um endpoint específico para deletar vídeos de usuários é o `/identity/api/v2/admin/videos/{video_id}`
+
+**Descrição:** "_Delete profile video of other users by video_id as admin_".
+
+Parâmetro na URL:
+- video_id (tipo: integer) 
+
+**Método**: DELETE 
+
+**Segurança:** Requer autenticação via bearerAuth (token JWT).
+
+**Respostas possíveis:**
+- 200: OK 
+- 403: "Forbidden" 
+- 404: "Video not found"
+---
+
+### 3.2 Realizar o mapeamento de rede do servidor da API
    - Identificar portas
    - Identificar serviçoes expostos
 
