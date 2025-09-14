@@ -23,7 +23,8 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 **Ferramenta utilizada:** `nmap`
 
-<img/>
+<img width="760" height="599" alt="Captura de tela 2025-09-14 162206" src="https://github.com/user-attachments/assets/cc08fee4-076f-49ff-b623-606935e42dc7" />
+/>
 
 Após o mapeamento com o uso do `nmap`, foi possível identificar as portas abertas 22 (SSH), 8080, 8087, 8443 e 8888 (interface web principal). O reconhecimento da rede foi concluído e a superfície de ataque inicial foi mapeada com sucesso.
 
