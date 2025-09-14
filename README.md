@@ -39,7 +39,7 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado par
 
 ## Licenças
 
-<a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">Analise-Vulnerabilidades-API-crAPI</a> © 2025 by <a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">ViniciusH97</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0
+<a href="https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI">Analise-Vulnerabilidades-API-crAPI</a> © 2025 by <a href="https://github.com/ViniciusH97">ViniciusH97</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0
 
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
 
