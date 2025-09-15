@@ -234,9 +234,26 @@ Identificação do endpoint método GET `/vehicles`:
 
 ### 3.2.1 Endpoints encontrados:
 
-1. `/identify/api/auth/login/`
-2. `/identity/api/v2/user/dashboard`
-3. `/identity/api/v2/vehicle/vehicles`
+Utilizando a ferramenta Burp Suite como proxy, foi realizada a navegação completa na aplicação crAPI. Todas as funcionalidades foram executadas, incluindo criação de contas, login, adição de veículos, interação com a loja e com a comunidade. O tráfego HTTP/S foi capturado e analisado para validar a documentação e buscar por endpoints não documentados.
+
+### Tabela de Endpoints Descobertos
+
+A tabela a seguir consolida todos os endpoints identificados durante o mapeamento ativo. A análise confirmou que a implementação atual da API está alinhada com sua documentação oficial.
+
+| Módulo | Endpoint e Método | Funcionalidade Descrita | Requer Autenticação? |
+| :--- | :--- | :--- | :--- |
+| **Identidade** | `POST /identity/api/auth/signup` | Cria uma nova conta de usuário. | Não |
+| **Identidade** | `POST /identity/api/auth/login` | Autentica um usuário e retorna um token JWT. | Não |
+| **Identidade** | `GET /identity/api/v2/user/dashboard` | Retorna os detalhes do perfil do usuário logado. | Sim (JWT) |
+| **Identidade** | `POST /identity/api/v2/user/change-email` | Inicia o processo de alteração de e-mail do usuário. | Sim (JWT) |
+| **Identidade** | `POST /identity/api/v2/user/verify-email-token` | Confirma a alteração de e-mail com um token. | Sim (JWT) |
+| **Identidade** | `POST /identity/api/v2/user/reset-password`| Reseta a senha do usuário logado. | Sim (JWT) |
+| **Veículos** | `GET /identity/api/v2/vehicle/vehicles` | Lista os veículos associados ao usuário logado. | Sim (JWT) |
+| **Comunidade**| `POST /community/api/v2/community/posts` | Cria uma nova postagem no fórum. | Sim (JWT) |
+| **Comunidade**| `GET /community/api/v2/community/posts/recent`| Lista as postagens recentes do fórum. | Sim (JWT) |
+| **Workshop** | `GET /workshop/api/mechanic/` | Lista os mecânicos disponíveis. | Sim (JWT) |
+| **Workshop** | `POST /workshop/api/shop/orders` | Realiza a compra de um item da loja. | Sim (JWT) |
+| **Workshop** | `POST /workshop/api/shop/orders/return_order`| Inicia a devolução de um item comprado. | Sim (JWT) |
 
 ---
 
@@ -268,27 +285,18 @@ curl -I http:/192.168.0.110:8888
 
 <img width="793" height="529" alt="image" src="https://github.com/user-attachments/assets/bbadd93d-76c7-461e-98f7-b3ab818b02ef" />
 
-**Acrescentar** [Descrição da análise com nikto]
-
-### 2. Análise dos Headers
-
-- `Server: openresty/1.25.3.1` → expõe tecnologia e versão do servidor (**fingerprinting**).
-- Ausência de `Content-Security-Policy` → aplicação vulnerável a **XSS**.
-- Ausência de `X-Frame-Options` → risco de **clickjacking**.
-- Ausência de `Strict-Transport-Security (HSTS)` → risco de downgrade de HTTPS → HTTP.
-- Ausência de `X-Content-Type-Options` → pode permitir **MIME sniffing**.
-- Presença de `Cache-Control: no-store, no-cache, must-revalidate` → **ponto positivo**, evita cache de conteúdo sensível.
+| Recurso / Cabeçalho     | Descrição             | Relevância / Impacto             |
+| --------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| `Server: openresty/1.25.3.1`    | Versão do servidor identificada     | Possível exploração de vulnerabilidades conhecidas dessa versão |
+| Cabeçalhos de segurança ausentes (`X-Frame-Options`, `X-Content-Type-Options`)    | Configurações de proteção contra clickjacking e MIME sniffing não configuradas | Indica falta de proteção e potenciais vetores de ataque         | Arquivos de backup/certificados expostos (`.tar`, `.cer`, `.pem`, `.jks`, `.war`, `.alz`) | Arquivos encontrados acessíveis via HTTP                                       | Podem conter credenciais, chaves privadas ou dados sensíveis    |
+| Arquivo `.env`        | Arquivo de configuração contendo possíveis credenciais    | Alta pois expõe segredos da aplicação  | IP interno exposto (`172.18.0.9`)    | IP revelado em header `Location`    | Permite mapear arquitetura interna da rede        |
+| Scripts antigos ou padrão (`/cgi/cgiproc?`, `/isapi/count.pl?`)   | Scripts que podem ser explorados para DoS ou execução remota       | Possível vetor de ataque em testes posteriores                  |
 
 ---
 
 Todas as descobertas foram registradas para servir de base para análise de vulnerabilidades e a organização dos dados por recurso e tipo de informação
 
-## Referência MITRE ATT&CK
 
-Mesmo em ambiente local, este trabalho pode ser mapeado conceitualmente para técnicas de **Reconnaissance** e **Discovery** da matriz MITRE ATT&CK, como:
+### Conclusão da Fase de Reconhecimento
 
-- **T1595 – Active Scanning:** exploração de rotas e endpoints internos disponíveis
-- **T1087 – Account Discovery:** levantamento de informações de usuários e dados visíveis via API
-- **T1609 – Container and Resource Discovery:** análise do ambiente local e recursos da aplicação
-
-> O mapeamento MITRE é conceitual, para ilustrar como as atividades de reconhecimento interno podem se relacionar com técnicas utilizadas em ataques reais.
+A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: **Threat Modeling**, onde estes endpoints serão sistematicamente testados em busca de falhas de segurança.
