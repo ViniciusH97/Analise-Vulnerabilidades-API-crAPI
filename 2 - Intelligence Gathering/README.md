@@ -1,12 +1,12 @@
-# Reconhecimento da Aplicação
+## Intelligence Gathering
 
 Este diretório contém as atividades relacionadas à **coleta de inteligência** durante os testes de segurança na aplicação crAPI, em um ambiente de laboratório local.
 
-## 1. Objetivo
+### 1. Objetivo
 
 O objetivo desta fase do pentest é mapear, identificar e documentar informações relevantes sobre a aplicação para suportar etapas posteriores de análise de vulnerabilidades, ataques e exploração, respeitando que todo o teste ocorre em **ambiente controlado e local**.
 
-## 2. Escopo
+### 2. Escopo
 
 - Ambiente: **localhost** (crAPI rodando localmente via Docker), no meu caso, utilizei o ip da máquina virtual com Ubuntu Server.
 - Métodos: **reconhecimento ativo** da aplicação
@@ -15,9 +15,9 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 ---
 
-## 3. Atividades realizadas
+### 3. Atividades realizadas
 
-### 3.1 Analise na documentação da crAPI para entender a lógica de negócio e endpoints esperados
+#### 3.1 Analise na documentação da crAPI para entender a lógica de negócio e endpoints esperados
 
 #### 3.1.1 A lógica da aplicação:
 
