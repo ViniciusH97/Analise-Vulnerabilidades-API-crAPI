@@ -264,6 +264,8 @@ curl -I http:/192.168.0.110:8888
 
 **Ferramenta utilizada:** `nikto`
 
+<img width="838" height="589" alt="image" src="https://github.com/user-attachments/assets/0535de43-dd2a-46be-a25c-d1c7822976ce" />
+
 <img width="793" height="529" alt="image" src="https://github.com/user-attachments/assets/bbadd93d-76c7-461e-98f7-b3ab818b02ef" />
 
 **Acrescentar** [Descrição da análise com nikto]
