@@ -266,16 +266,16 @@ A tabela a seguir consolida todos os endpoints identificados durante o mapeament
 ### 1. Coleta dos headers:
 
 ```bash
-curl -I http:/192.168.0.110:8888
+curl -I http:/192.168.1.19:8888
 ```
-
-<img width="708" height="417" alt="image" src="https://github.com/user-attachments/assets/3d52c29f-6610-4f40-a449-ba2ec6b5a273" />
-
----
 
 **Ferramenta utilizada:** `wget`
 
-<img width="683" height="491" alt="image" src="https://github.com/user-attachments/assets/ce692ea9-69aa-4ba0-8453-10d3507f1f19" />
+```bash
+wget --server-response --spider http://192.168.1.10:8888
+```
+
+<img width="846" height="689" alt="image" src="https://github.com/user-attachments/assets/3a2c2223-1f69-45c6-8edc-3721f6ac401b" />
 
 --- 
 
