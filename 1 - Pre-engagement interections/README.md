@@ -4,7 +4,7 @@
 
 Antes de iniciarmos, é importante respondermos algumas perguntas para realizar o teste de invasão em uma aplicação web. Seguindo os preceitos do Penetration Testing Execution Standard (PTES).
 
-Seções da norma PTES:
+Sessões da norma PTES:
 
 - Pre-engagement Interactions
 - Intelligence Gathering
