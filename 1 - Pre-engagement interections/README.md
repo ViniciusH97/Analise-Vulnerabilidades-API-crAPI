@@ -53,6 +53,10 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 
 ---
 
+## Objetivo
+
+Analisar as falhas críticas de autenticação e autorização em APIs RESTful, por meio de testes de penetração em ambiente controlado, visando gerar recomendações técnicas para mitigação de riscos.
+
 ### Ambiente de Testes
 
 - **Sistema Host:** Ubuntu Server em máquina virtual
