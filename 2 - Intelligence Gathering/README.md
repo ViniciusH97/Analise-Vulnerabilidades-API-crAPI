@@ -8,7 +8,7 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 ### 2. Escopo
 
-- Ambiente: **localhost** (crAPI rodando localmente via Docker), no meu caso, utilizei o ip da máquina virtual com Ubuntu Server.
+- Ambiente: **Rede Interna** (crAPI rodando localmente via Docker), no meu caso, utilizei o ip da máquina virtual com Ubuntu Server.
 - Métodos: **reconhecimento ativo** da aplicação
 - Ferramentas utilizadas: `curl`, `wget`, `DevTools`,`nikto`, entre outros.
 - Não envolve endpoints públicos ou coleta externa
