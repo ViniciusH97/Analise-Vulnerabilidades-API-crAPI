@@ -52,4 +52,4 @@ Após o usuário estar logado, esses endpoints são usados para verificar a perm
 - POST /workshop/api/shop/orders : (BOLA) Pode-se realizar uma compra em nome de outro usuário? 
 
 
-Os endpoints foram categorizados por criticidade. Dessa forma, a próxima etapa será a (analise de vulnerabilidade(Vulnerability Analysis))[link]
+Os endpoints foram categorizados por criticidade. Dessa forma, a próxima etapa será a (analise de vulnerabilidade(Vulnerability Analysis))[https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/4%20-%20Vulnerability%20Analysis]
