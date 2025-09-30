@@ -32,7 +32,7 @@ A seguir, o detalhamento das principais funcionalidades e seus respectivos endpo
 
 ---
 
-### 1. Módulo de Identidade e Autenticação
+### 4. Módulo de Identidade e Autenticação
 Este módulo gerencia todo o ciclo de vida do usuário, desde o cadastro até a recuperação de senha.
 
 Criação de Conta de Usuário
@@ -69,7 +69,7 @@ Respostas possíveis:
 - 200: Retorna um token JWT para ser usado em requisições autenticadas.
 - 500: Descrição não disponível 
 ---
-### 2. Módulo de Veículos
+### 5. Módulo de Veículos
 Após o login, o usuário pode gerenciar seus veículos.
 
 **Adicionar um Novo Veículo**
@@ -101,7 +101,7 @@ Parâmetro na URL:
 - 200: Retorna os dados de localização.
 - 404: "Invalid vehicle_id for User" 
 ---
-### 3. Módulo de Comunidade (Fórum)
+### 6. Módulo de Comunidade (Fórum)
 A aplicação possui um fórum onde usuários autenticados podem interagir.
 
 **Criar uma Nova Postagem**
@@ -118,7 +118,7 @@ Usuários criam posts no fórum através do endpoint `/community/api/v2/communit
 **Respostas possíveis:**
 - 200: Retorna o post recém-criado com detalhes do autor.
 ---
-### 4. Módulo de Workshop (Loja)
+### 7. Módulo de Workshop (Loja)
 Usuários podem comprar produtos e gerenciar pedidos.
 
 **Criar um Pedido**
@@ -136,7 +136,7 @@ Para comprar um produto, a aplicação utiliza o endpoint `/workshop/api/shop/or
 - 200: "Order sent successfully." 
 - 400: "Insufficient Balance. Please apply coupons to get more balance!" 
 ---
-### 5. Módulo Administrativo **(Ponto de Atenção)**
+### 8. Módulo Administrativo **(Ponto de Atenção)**
 Existem endpoints que deveriam ser restritos a administradores.
 
 **Deletar Vídeo de Perfil (Admin)**
@@ -157,7 +157,7 @@ Parâmetro na URL:
 - 404: "Video not found"
 ---
 
-### 3.2 Realizar o mapeamento de rede do servidor da API
+#### 8.1 Realizar o mapeamento de rede do servidor da API
    - Identificar portas
    - Identificar serviçoes expostos
 
