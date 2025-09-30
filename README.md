@@ -14,6 +14,16 @@ Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level A
 
 A metodologia se seguirá pelos preceitos do (Penetration Testing Execution Standard), que auxiliará em uma análise mais ténica e eficiente dos testes. O metódo de teste seguirá com espeçoes manuais e automatizadas com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI. Além disso, a categorização e a compreensão dos riscos serão aprimoradas pela consulta ao MITRE ATT&CK, tornando a visão das táticas e técnicas de um invasor real com foco nas vulnerabilidades críticas das APIs.
 
+Sessões da norma PTES:
+
+- Pre-engagement Interactions
+- Intelligence Gathering
+- Threat Modeling
+- Vulnerability Analysis
+- Exploitation
+- Post Exploitation
+- Reporting
+
 ## Tecnologias Utilizadas
 
 - Docker e Docker Compose
