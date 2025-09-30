@@ -15,6 +15,20 @@ Sessões da norma PTES:
 - Reporting
 
 ---
+### Definição do Escopo
+
+**O quê:** Análise de segurança focada exclusivamente em APIs RESTful.
+**Resultado:** Foco total na lógica da aplicação e nos endpoints da API.
+
+### Estabelecimento do Objetivo
+**Meta Principal:** Identificar e analisar vulnerabilidades em uma API.
+**Critério de Sucesso:** Classificar as falhas encontradas, Broken Authentication e BOLA da OWASP Top 10.
+
+### Definição das Regras de Engajamento (Metodologia)
+**Framework de Análise:** Adoção do PTES como o metodologia de teste.
+**Abordagem:** Cada teste realizado foi planejado para validar a Broken Authentication e BOLA da OWASP.
+
+---
 
 **Perguntas**
 
@@ -87,5 +101,6 @@ Analisar as falhas críticas de autenticação e autorização em APIs RESTful, 
 
 ![image](https://github.com/user-attachments/assets/72dbb6a0-d4fa-4c21-a179-10bdd98391cb)
 > ping do Kali Linux para o Ubuntu Server.
+
 
 Como a comunicação entre as máquinas virtuais configuradas na mesma rede foi um sucesso, podemos seguir para a segunda seção da norma PTES chamada de [Intelligence Gathering](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/2%20-%20Intelligence%20Gathering)
