@@ -32,7 +32,9 @@ A seguir, o detalhamento das principais funcionalidades e seus respectivos endpo
 
 ---
 
-### 4. Módulo de Identidade e Autenticação
+### 4. Identificação dos Endpoints da documentação
+
+#### 4.1. Módulo de Identidade e Autenticação
 Este módulo gerencia todo o ciclo de vida do usuário, desde o cadastro até a recuperação de senha.
 
 Criação de Conta de Usuário
@@ -69,7 +71,7 @@ Respostas possíveis:
 - 200: Retorna um token JWT para ser usado em requisições autenticadas.
 - 500: Descrição não disponível 
 ---
-### 5. Módulo de Veículos
+#### 4.3. Módulo de Veículos
 Após o login, o usuário pode gerenciar seus veículos.
 
 **Adicionar um Novo Veículo**
@@ -101,7 +103,7 @@ Parâmetro na URL:
 - 200: Retorna os dados de localização.
 - 404: "Invalid vehicle_id for User" 
 ---
-### 6. Módulo de Comunidade (Fórum)
+#### 4.4. Módulo de Comunidade (Fórum)
 A aplicação possui um fórum onde usuários autenticados podem interagir.
 
 **Criar uma Nova Postagem**
@@ -118,7 +120,7 @@ Usuários criam posts no fórum através do endpoint `/community/api/v2/communit
 **Respostas possíveis:**
 - 200: Retorna o post recém-criado com detalhes do autor.
 ---
-### 7. Módulo de Workshop (Loja)
+#### 4.5. Módulo de Workshop (Loja)
 Usuários podem comprar produtos e gerenciar pedidos.
 
 **Criar um Pedido**
@@ -136,7 +138,7 @@ Para comprar um produto, a aplicação utiliza o endpoint `/workshop/api/shop/or
 - 200: "Order sent successfully." 
 - 400: "Insufficient Balance. Please apply coupons to get more balance!" 
 ---
-### 8. Módulo Administrativo **(Ponto de Atenção)**
+#### 4.6. Módulo Administrativo **(Ponto de Atenção)**
 Existem endpoints que deveriam ser restritos a administradores.
 
 **Deletar Vídeo de Perfil (Admin)**
@@ -157,7 +159,7 @@ Parâmetro na URL:
 - 404: "Video not found"
 ---
 
-#### 8.1 Realizar o mapeamento de rede do servidor da API
+#### 4.7. Realizar o mapeamento de rede do servidor da API
    - Identificar portas
    - Identificar serviçoes expostos
 
@@ -175,7 +177,7 @@ Após o mapeamento com o uso do `nmap`, foi possível identificar as portas aber
    - Análise de métodos HTTP suportados (GET, POST, PUT, DELETE, etc.)
    - Documentação de parâmetros de entrada e formatos de resposta.
 
-### 3.2 Tela de Login - Aplicação crAPI:
+### 5. Tela de Login - Aplicação crAPI:
 
 **Ferramenta utilizada:** `DevTools`
 
@@ -232,11 +234,11 @@ Identificação do endpoint método GET `/vehicles`:
 
 ---
 
-### 3.2.1 Endpoints encontrados:
+### 6. Endpoints encontrados:
 
 Utilizando a ferramenta Burp Suite como proxy, foi realizada a navegação completa na aplicação crAPI. Todas as funcionalidades foram executadas, incluindo criação de contas, login, adição de veículos, interação com a loja e com a comunidade. O tráfego HTTP/S foi capturado e analisado para validar a documentação e buscar por endpoints não documentados.
 
-### Tabela de Endpoints Descobertos
+### 7. Tabela de Endpoints Descobertos
 
 A tabela a seguir consolida todos os endpoints identificados durante o mapeamento ativo. A análise confirmou que a implementação atual da API está alinhada com sua documentação oficial.
 
@@ -257,13 +259,13 @@ A tabela a seguir consolida todos os endpoints identificados durante o mapeament
 
 ---
 
-### 3.3. Análise de respostas HTTP e headers
+### 8. Análise de respostas HTTP e headers
    - Investigação de headers de segurança (`Content-Security-Policy`, `X-Frame-Options`, etc.)
    - Identificação de informações potencialmente sensíveis em respostas
 
 **Ferramenta utilizada:** `curl`
 
-### 1. Coleta dos headers:
+###$ 8.1. Coleta dos headers:
 
 ```bash
 curl -I http:/192.168.1.19:8888
@@ -297,6 +299,6 @@ wget --server-response --spider http://192.168.1.10:8888
 Todas as descobertas foram registradas para servir de base para análise de vulnerabilidades e a organização dos dados por recurso e tipo de informação
 
 
-### Conclusão da Fase de Reconhecimento
+### 9. Conclusão da Fase de Reconhecimento
 
 A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: **Threat Modeling**, onde estes endpoints serão sistematicamente testados em busca de falhas de segurança.
