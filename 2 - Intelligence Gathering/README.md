@@ -195,8 +195,6 @@ Neste teste foi utilizado um e-mail e senha não cadastrado para mapear o endpoi
 
 <img width="833" height="374" alt="image" src="https://github.com/user-attachments/assets/19c58a0f-664a-410f-b2e9-8b968d4fc4d7" />
 
-**Acrescentar**(Testar os casos de e-mail valido com senha inválida)
-
 _Request_ em estrutura JSON:
 
 ```json
@@ -298,7 +296,6 @@ wget --server-response --spider http://192.168.1.10:8888
 
 Todas as descobertas foram registradas para servir de base para análise de vulnerabilidades e a organização dos dados por recurso e tipo de informação
 
-
 ### 9. Conclusão da Fase de Reconhecimento
 
-A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: **Threat Modeling**, onde estes endpoints serão sistematicamente testados em busca de falhas de segurança.
+A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: **Threat Modeling**, onde estes endpoints serão analisados em nível de criticidade.
