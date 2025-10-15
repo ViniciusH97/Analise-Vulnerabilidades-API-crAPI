@@ -1,12 +1,12 @@
-## Intelligence Gathering
+# Intelligence Gathering
 
 Este diretório contém as atividades relacionadas à **coleta de inteligência** durante os testes de segurança na aplicação crAPI, em um ambiente de laboratório local.
 
-### 1. Objetivo
+## 1. Objetivo
 
 O objetivo desta fase do pentest é mapear, identificar e documentar informações relevantes sobre a aplicação para suportar etapas posteriores de análise de vulnerabilidades, ataques e exploração, respeitando que todo o teste ocorre em **ambiente controlado e local**.
 
-### 2. Escopo
+## 2. Escopo
 
 - Ambiente: **Rede Interna** (crAPI rodando localmente via Docker), no meu caso, utilizei o ip da máquina virtual com Ubuntu Server.
 - Métodos: **reconhecimento ativo** da aplicação
@@ -15,11 +15,11 @@ O objetivo desta fase do pentest é mapear, identificar e documentar informaçõ
 
 ---
 
-### 3. Atividades realizadas
+## 3. Atividades realizadas
 
-#### 3.1 Analise na documentação da crAPI para entender a lógica de negócio e endpoints esperados
+### 3.1 Analise na documentação da crAPI para entender a lógica de negócio e endpoints esperados
 
-#### 3.1.1 A lógica da aplicação:
+### 3.1.1 A lógica da aplicação:
 
 Após analisar o arquivo `crapi-openapi-spec.json`, foi possível identificar que a aplicação crAPI simula uma plataforma para gerenciamento de veículos. A lógica de negócio é dividida em módulos principais: 
 
@@ -32,9 +32,9 @@ A seguir, o detalhamento das principais funcionalidades e seus respectivos endpo
 
 ---
 
-### 4. Identificação dos Endpoints da documentação
+## 4. Identificação dos Endpoints da documentação
 
-#### 4.1. Módulo de Identidade e Autenticação
+### 4.1. Módulo de Identidade e Autenticação
 Este módulo gerencia todo o ciclo de vida do usuário, desde o cadastro até a recuperação de senha.
 
 Criação de Conta de Usuário
@@ -71,7 +71,7 @@ Respostas possíveis:
 - 200: Retorna um token JWT para ser usado em requisições autenticadas.
 - 500: Descrição não disponível 
 ---
-#### 4.3. Módulo de Veículos
+### 4.3. Módulo de Veículos
 Após o login, o usuário pode gerenciar seus veículos.
 
 **Adicionar um Novo Veículo**
@@ -103,7 +103,7 @@ Parâmetro na URL:
 - 200: Retorna os dados de localização.
 - 404: "Invalid vehicle_id for User" 
 ---
-#### 4.4. Módulo de Comunidade (Fórum)
+### 4.4. Módulo de Comunidade (Fórum)
 A aplicação possui um fórum onde usuários autenticados podem interagir.
 
 **Criar uma Nova Postagem**
@@ -120,7 +120,7 @@ Usuários criam posts no fórum através do endpoint `/community/api/v2/communit
 **Respostas possíveis:**
 - 200: Retorna o post recém-criado com detalhes do autor.
 ---
-#### 4.5. Módulo de Workshop (Loja)
+### 4.5. Módulo de Workshop (Loja)
 Usuários podem comprar produtos e gerenciar pedidos.
 
 **Criar um Pedido**
@@ -138,7 +138,7 @@ Para comprar um produto, a aplicação utiliza o endpoint `/workshop/api/shop/or
 - 200: "Order sent successfully." 
 - 400: "Insufficient Balance. Please apply coupons to get more balance!" 
 ---
-#### 4.6. Módulo Administrativo **(Ponto de Atenção)**
+### 4.6. Módulo Administrativo **(Ponto de Atenção)**
 Existem endpoints que deveriam ser restritos a administradores.
 
 **Deletar Vídeo de Perfil (Admin)**
@@ -159,7 +159,7 @@ Parâmetro na URL:
 - 404: "Video not found"
 ---
 
-#### 4.7. Realizar o mapeamento de rede do servidor da API
+### 4.7. Realizar o mapeamento de rede do servidor da API
    - Identificar portas
    - Identificar serviçoes expostos
 
@@ -177,9 +177,7 @@ Após o mapeamento com o uso do `nmap`, foi possível identificar as portas aber
    - Análise de métodos HTTP suportados (GET, POST, PUT, DELETE, etc.)
    - Documentação de parâmetros de entrada e formatos de resposta.
 
-### 5. Tela de Login - Aplicação crAPI:
-
-**Ferramenta utilizada:** `DevTools`
+### 5. Reconhecimento de Endpoints DevTools
 
 <img width="1358" height="730" alt="image" src="https://github.com/user-attachments/assets/bc4bd09b-a8e3-4419-a9cb-885e19e92acd" />
 
@@ -231,6 +229,18 @@ Identificação do endpoint método GET `/vehicles`:
 <img width="950" height="443" alt="image" src="https://github.com/user-attachments/assets/62493fe1-ea35-4cae-b4ce-73e2f0c8176d" />
 
 ---
+
+## Reconhecimento com o Postman
+
+## Reconhecimento com o BurpSuite
+
+Identificação do endpoint POST identity/api/auth/siqnup:
+
+<img width="1157" height="616" alt="Captura de tela 2025-09-14 203447" src="https://github.com/user-attachments/assets/1e1af21a-264e-46ff-9859-9ca94b283cfd" />
+
+Identificação do endpoint /workshop/api/mechanic/
+
+<img width="1366" height="729" alt="Captura de tela 2025-09-14 213800" src="https://github.com/user-attachments/assets/55cfb467-75f0-49fe-9bd9-c78ece74fbe1" />
 
 ### 6. Endpoints encontrados:
 
