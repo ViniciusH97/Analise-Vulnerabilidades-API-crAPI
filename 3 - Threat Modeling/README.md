@@ -41,6 +41,8 @@ Após o usuário estar logado, esses endpoints são usados para verificar a perm
 
 - POST /identity/api/v2/user/verify-email-token : (BFLA) Conta A pode ser usado para confirmar a troca de e-mail na Conta B, levando ao roubo da conta?
 
+- GET /community/api/v2/community/posts : Quais dados estão sendo retornados
+
 **Alta**
 
 - GET /identity/api/v2/vehicle/vehicles : (BOLA) É possível ver os veículos de outro usuário alterando o ID ou de outra forma?
