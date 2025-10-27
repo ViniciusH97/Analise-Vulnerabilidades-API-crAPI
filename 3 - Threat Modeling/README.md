@@ -21,13 +21,13 @@ Endpoints em que o atacante pode se passar por outra pessoa ou quebrar o fluxo d
 
 **Crítica**
 
-- POST /identity/api/auth/login: É possível teste de brute force, e pode manipular o login da aplicação?
+- POST /identity/api/auth/login: É possível realizar uma força bruta, pode manipular o login da aplicação e enumerar contas de usuários?
 
 **Alta**
 - POST /identity/api/v2/user/reset-password: É possível recuperar a senha da conta de outro usuário manipulando a requisição?
 
 **Média**
-- POST /identity/api/auth/signup : É possível criar usuário com senhas fracas e enumerar contas existentes?
+- POST /identity/api/auth/signup : É possível criar usuários com senhas fracas?
 
 ---
 
@@ -43,15 +43,17 @@ Após o usuário estar logado, esses endpoints são usados para verificar a perm
 
 **Alta**
 
-- GET /identity/api/v2/vehicle/vehicles : (BOLA) É possível ver os veículos de outro usuário alterando o ID ou de outra forma?
+- GET /identity/api/v2/vehicle/{vehicleId}/location : É possível ver a localização do veículo de outro usuário?
 
-- GET /community/api/v2/community/posts : Quais dados estão sendo retornados?
+- GET /identity/api/v2/vehicle/vehicles : É possível ver os veículos de outro usuário alterando o ID ou de outra forma?
 
-- POST /identity/api/v2/user/change-email : (BFLA) Um usuário só pode iniciar essa ação para sua própria conta?
+- GET /community/api/v2/community/posts : Quais dados estão sendo retornados nas publicações?
+
+- POST /identity/api/v2/user/change-email : Um usuário só pode iniciar essa ação para sua própria conta ou consegue solicitar para outra conta?
 
 **Média**
 
 - POST /workshop/api/shop/orders : (BOLA) Pode-se realizar uma compra em nome de outro usuário? 
 
 
-Os endpoints foram categorizados por criticidade. Dessa forma, a próxima etapa será a [análise de vulnerabilidade(Vulnerability Analysis)](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/4%20-%20Vulnerability%20Analysis)
+Os endpoints foram categorizados pelo a hipótese de criticidade. Dessa forma, a próxima etapa será a [análise de vulnerabilidade(Vulnerability Analysis)](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/4%20-%20Vulnerability%20Analysis). Essa etapa vai evidênciar se realmente há vulnerabilidades nos endpoints classificados com grau de criticidade.
