@@ -4,13 +4,13 @@ Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) c
 
 ## Objetivo
 
-Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level Authorization (BOLA)** e **Broken Authentication** entre outras, podem ser exploradas por atacantes, e apresentar **boas práticas de mitigação** baseadas no OWASP Top 10.
+Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level Authorization (BOLA)** e **Broken Authentication**, podem ser exploradas por atacantes, e apresentar boas práticas de mitigação baseadas no OWASP Top 10.
 
 ---
 
 ## Metodologia Utilizadas
 
-A metodologia se seguirá pelos preceitos do (Penetration Testing Execution Standard), que auxiliará em uma análise mais ténica e eficiente dos testes. O metódo de teste seguirá com espeçoes manuais e automatizadas com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI. Além disso, a categorização e a compreensão dos riscos serão aprimoradas pela consulta ao MITRE ATT&CK, tornando a visão das táticas e técnicas de um invasor real com foco nas vulnerabilidades críticas das APIs.
+A metodologia se seguirá pelos preceitos do (Penetration Testing Execution Standard), que auxiliará em uma análise mais ténica e eficiente dos testes. O metódo de teste seguirá com testes manuais com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI (gray-box). Além disso, a categorização e a compreensão dos riscos serão aprimoradas pela consulta ao MITRE ATT&CK, tornando a visão das táticas e técnicas de um invasor real com foco nas vulnerabilidades críticas das APIs.
 
 Sessões da norma PTES:
 
@@ -26,7 +26,6 @@ Sessões da norma PTES:
 
 - Docker e Docker Compose
 - Ferramentas de Pentest: Burp Suite, Nmap, Hydra, Postman, Nikto, wget entre outros.
-- Scripts em **Python** e **Bash** para automação de testes
 - PostgreSQL/MySQL (no backend da crAPI)
 
 ---
