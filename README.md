@@ -1,8 +1,6 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/ViniciusH97/Analise-Vulnerabilidades-API-crAPI)
+# TCC - Análise de Vulnerabilidades em Autenticação e Autorização em APIs RESTful (crAPI)
 
-# TCC - Análise de Vulnerabilidades em APIs RESTful (crAPI)
-
-Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) com foco na **identificação e exploração de vulnerabilidades críticas em APIs RESTful**, utilizando a aplicação vulnerável **crAPI** desenvolvida pela OWASP.
+Este repositório documenta o projeto de Trabalho de Conclusão de Curso (TCC) com foco na identificação e exploração de vulnerabilidades críticas em APIs RESTful, utilizando a aplicação vulnerável chamada crAPI desenvolvida pela OWASP. Está aplicação foi criada de forma vulnerável propositalmente.
 
 ## Objetivo
 
@@ -27,7 +25,7 @@ Sessões da norma PTES:
 ## Tecnologias Utilizadas
 
 - Docker e Docker Compose
-- Ferramentas de Pentest: Burp Suite, ZAP, Nmap, ffuf, Hydra, Postman entre outros.
+- Ferramentas de Pentest: Burp Suite, Nmap, Hydra, Postman, Nikto, wget entre outros.
 - Scripts em **Python** e **Bash** para automação de testes
 - PostgreSQL/MySQL (no backend da crAPI)
 
@@ -45,7 +43,7 @@ Sessões da norma PTES:
 
 ## Aviso 
 
-Este projeto foi desenvolvido exclusivamente para fins educacionais, voltado para demonstração controlada em ambiente de testes. Nenhuma técnica aqui documentada deve ser usada em ambientes reais sem autorização explícita.
+Este projeto foi desenvolvido para fins de pesquisa e para o trabalho de conclusão do curso, voltado em análise de segurança aos mecanismos de autenticação e autorização em APIs RESTful. Nenhuma técnica aqui documentada deve ser usada em ambientes reais sem autorização.
 
 ## Licenças
 
