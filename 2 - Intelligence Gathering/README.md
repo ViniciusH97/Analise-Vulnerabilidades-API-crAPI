@@ -232,6 +232,10 @@ Identificação do endpoint método GET `/vehicles`:
 
 ## Reconhecimento com o Postman
 
+Após o mapeamento dos endpoints da aplicação, foi utilizado o Potman para tentar as requisições e estudar o comportamento das rotas, analisando o corpo no request e response.
+
+<img width="1359" height="595" alt="teste com o Postman" src="https://github.com/user-attachments/assets/a7069a67-3081-43cf-9116-b78f0f42c0f2" />
+
 ## Reconhecimento com o BurpSuite
 
 Identificação do endpoint POST identity/api/auth/siqnup:
