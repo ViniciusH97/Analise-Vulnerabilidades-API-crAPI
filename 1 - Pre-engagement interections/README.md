@@ -1,6 +1,6 @@
 ## Pre-engagement interactions
 
-### Teste de penetração de aplicativo Web
+### Pentest de aplicativo Web com APIs RESTful
 
 Antes de iniciarmos, é importante respondermos algumas perguntas para realizar o teste de invasão em uma aplicação web. Seguindo os preceitos do Penetration Testing Execution Standard (PTES).
 
