@@ -32,7 +32,6 @@ Sessões da norma PTES:
 
 ## Referências
 - [PTES (Penetration Testing Execution Standard)](http://www.pentest-standard.org/index.php/Main_Page)
-- [MITRE ATT&ACK](https://attack.mitre.org/)
 - [OWASP Top 10 - API Security](https://owasp.org/www-project-api-security/)
 - [crAPI - Completely Ridiculous API](https://github.com/OWASP/crAPI)
 - [Meu Fork do Projeto do crAPI ajustado para o trabalho](https://github.com/ViniciusH97/crAPI.git)
