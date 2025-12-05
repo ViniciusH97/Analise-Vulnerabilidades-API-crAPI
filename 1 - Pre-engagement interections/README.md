@@ -69,7 +69,7 @@ R: Sim, serão realizados testes autenticados para verificar permissões, contro
 
 ## Objetivo
 
-Analisar as falhas críticas de autenticação e autorização em APIs RESTful, por meio de testes de penetração em ambiente controlado, visando gerar recomendações técnicas para mitigação de riscos.
+Elaborar os laboratório de teste, e garantir que ambas as Vms estejam funcionando corretamnete para operar e permitir o inicio da análise da aplicação web crAPI.
 
 ### Ambiente de Testes
 
