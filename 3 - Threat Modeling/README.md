@@ -1,16 +1,16 @@
 ## Modelagem de Ameaças
 
-Documentação do processo de análise de vulnerabilidades conduzido na aplicação crAPI (Completely Ridiculous API).
+Documentação do processo de análise de vulnerabilidades na aplicação crAPI.
 
 ### Objetivo
 
-O objetivo desta etapa é identificar e documentar de forma sistemática as vulnerabilidades de segurança presentes na aplicação alvo, com foco principal nas falhas de Autenticação Quebrada (API2:2023) e Autorização Quebrada, incluindo BOLA (Broken Object Level Authorization - API1:2023) e BFLA (Broken Function Level Authorization - API5:2023), conforme o OWASP API Security Top 10.
+O objetivo desta etapa é identificar e registrar de forma organizada as vulnerabilidades de segurança na aplicação que estamos analisando.  O foco principal está nas falhas relacionadas à Autenticação Quebrada (API2:2023) e BOLA (Broken Object Level Authorization - API1:2023) e o BFLA (Broken Function Level Authorization - API5:2023), de acordo com o OWASP API Security Top 10.
 
 ### Estrutura da Análise
 
-Parte 1: Autenticação: explorar Broken Authentication.
+Parte 1: Autenticação: identificar possíveis Broken Authentication.
 
-Parte 2: Autorização: explorar BOLA e BFLA (Autorização Quebrada em Nível de Função)
+Parte 2: Autorização: identificar possíveis BOLA e BFLA (Autorização Quebrada em Nível de Função)
 
 ### Identificação de Endpoints Críticos:
 
