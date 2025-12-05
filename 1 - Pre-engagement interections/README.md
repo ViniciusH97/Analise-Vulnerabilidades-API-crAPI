@@ -17,15 +17,14 @@ Sessões da norma PTES:
 ---
 ### Definição do Escopo
 
-**O quê:** Análise de segurança focada exclusivamente em APIs RESTful.
-**Resultado:** Foco total na lógica da aplicação e nos endpoints da API.
+**O quê:** Análise de segurança com foco nas APIs RESTful.
 
 ### Estabelecimento do Objetivo
-**Meta Principal:** Identificar e analisar vulnerabilidades em uma API.
-**Critério de Sucesso:** Classificar as falhas encontradas, Broken Authentication e BOLA da OWASP Top 10.
+**Meta:** Identificar vulnerabilidades em APIs.
+**Critério:** Classificar as falhas encontradas, Broken Authentication e BOLA da OWASP Top 10.
 
 ### Definição das Regras de Engajamento (Metodologia)
-**Framework de Análise:** Adoção do PTES como o metodologia de teste.
+**Framework de Análise:** Uso das fases do PTES como o metodologia do teste de invasão.
 **Abordagem:** Cada teste realizado foi planejado para validar a Broken Authentication e BOLA da OWASP.
 
 ---
