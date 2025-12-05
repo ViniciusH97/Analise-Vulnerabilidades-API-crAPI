@@ -23,7 +23,7 @@ Sessões da norma PTES:
 **Meta:** Identificar vulnerabilidades em APIs.
 **Critério:** Classificar as falhas encontradas, Broken Authentication e BOLA da OWASP Top 10.
 
-### Definição das Regras de Engajamento (Metodologia)
+### Definição da Metodologia:
 **Framework de Análise:** Uso das fases do PTES como o metodologia do teste de invasão.
 **Abordagem:** Cada teste realizado foi planejado para validar a Broken Authentication e BOLA da OWASP.
 
