@@ -36,6 +36,8 @@ Sessões da norma PTES:
 - [crAPI - Completely Ridiculous API](https://github.com/OWASP/crAPI)
 - [Meu Fork do Projeto do crAPI ajustado para o trabalho](https://github.com/ViniciusH97/crAPI.git)
 - [Introdução ao Pentest 2º Edição - Daniel Moreno](https://www.novatec.com.br/livros/introducao-pentest-2ed/)
+- [Engenharia de Software - Pressman e Maxim](https://books.google.com.br/books/about/Engenharia_de_software_9_ed.html?id=FSE3EAAAQBAJ&redir_esc=y)
+- [Hacking APis - Corey Ball](https://www.oreilly.com/library/view/hacking-apis/9781098130244/)
 
 ---
 
