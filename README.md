@@ -10,17 +10,17 @@ Demonstrar de forma prática, como vulnerabilidades como **Broken Object Level A
 
 ## Metodologia Utilizadas
 
-A metodologia se seguirá pelos preceitos do PTES (Penetration Testing Execution Standard), que auxiliará em uma análise mais ténica e eficiente dos testes. O metódo de teste seguirá com testes manuais com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI (gray-box).
+A metodologia se seguirá pelos preceitos do PTES (Penetration Testing Execution Standard), que auxiliará em uma análise mais técnica e eficiente dos testes. O metódo de teste seguirá com testes manuais com uso de ferramentas e scripts com o conhecimento parcial da aplicação crAPI (gray-box).
 
 Sessões da norma PTES:
 
-- Pre-engagement Interactions
-- Intelligence Gathering
-- Threat Modeling
-- Vulnerability Analysis
-- Exploitation
-- Post Exploitation
-- Reporting
+- [Pre-engagement Interactions](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/1%20-%20Pre-engagement%20interections)
+- [Intelligence Gathering](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/2%20-%20Intelligence%20Gathering)
+- [Threat Modeling](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/3%20-%20Threat%20Modeling)
+- [Vulnerability Analysis](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/4%20-%20Vulnerability%20Analysis)
+- [Exploitation](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/4%20-%20Vulnerability%20Analysis)
+- [Post Exploitation](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/6%20-%20Post%20Exploitation)
+- [Reporting](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main)
 
 ## Tecnologias Utilizadas
 
