@@ -312,4 +312,4 @@ Todas as descobertas foram registradas para servir de base para análise de vuln
 
 ### 9. Conclusão da Fase de Reconhecimento
 
-A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: **Threat Modeling**, onde estes endpoints serão analisados em nível de criticidade.
+A fase de *Intelligence Gathering* foi concluída com sucesso. A superfície de ataque da API foi completamente mapeada e documentada. Com este conhecimento detalhado, o projeto avança para a próxima fase: [Threat Modeling](https://github.com/ViniciusH97/Analise-Vulnerabilidades-API-crAPI/tree/main/3%20-%20Threat%20Modeling) ou modelagem de ameaças, onde estes endpoints serão analisados em nível de criticidade.
